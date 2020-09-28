@@ -12,6 +12,10 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import STEPDEF.ReadProperties;
 
+/**
+ * @author Ritam
+ * Class to search by search param of Flights in Make My Trip
+ */
 public class Index {
 
 	static By toElementCliclk = By.xpath("//*[@id=\"root\"]/div/div[2]/div/div/div[2]/div[1]/div[2]/label");
