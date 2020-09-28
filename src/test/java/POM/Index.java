@@ -32,7 +32,7 @@ public class Index {
 
 	public static void searchBox(ReadProperties prop, WebDriver driver) 
 	{
-		WebDriverWait wait = new WebDriverWait(driver, 20);
+		WebDriverWait wait = new WebDriverWait(driver, 30);
 		wait.until(ExpectedConditions.elementToBeClickable(tofld));
 		driver.findElement(tofld).sendKeys(prop.readPropfie().getProperty("SEARCHKEY"));		  
 		wait.until(ExpectedConditions.visibilityOfElementLocated(searchBox));
