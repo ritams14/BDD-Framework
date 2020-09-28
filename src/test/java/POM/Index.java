@@ -22,6 +22,7 @@ public class Index {
 	static By searchBox = By.xpath("//*[@id=\"react-autowhatever-1\"]/div[1]/ul");
 	static By submitBtn = By.xpath("//*[@id=\"root\"]/div/div[2]/div/div/div[2]/p/a");
 	static By slidrBtn = By.xpath("//*[@id=\"Offers_Listing\"]/div[2]/div/button[2]");
+	static By cityclick = By.xpath("//*[@id=\"react-autowhatever-1-section-0-item-0\"]/div/div[1]/p[1]");
 	public static By tofld = By.xpath("//*[@id=\"root\"]/div/div[2]/div/div/div[2]/div[1]/div[2]/div[1]/div/div/div/input");
 	
 	public static void toElementCliclk(WebDriver driver) 
@@ -40,13 +41,12 @@ public class Index {
 		  
 		for (WebElement element : allElements) 
 		  { 			  	
-			  driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);
-			  System.out.println("Search Issue");
-			  if(element.getText().trim().contains("CCU"))
+			  
+			  if(element.getText().trim().contains("Mumbai"))
 			  { 
 				  wait.until(ExpectedConditions.elementToBeClickable(element));				  
 				  JavascriptExecutor jse = (JavascriptExecutor) driver;
-				  jse.executeScript("arguments[0].click()", driver.findElement(By.xpath("//*[@id=\"react-autowhatever-1-section-0-item-0\"]/div/div[1]/p[1]")));
+				  jse.executeScript("arguments[0].click()", driver.findElement(cityclick));
 				  break;
 			  }		  
 		  }		 		  
