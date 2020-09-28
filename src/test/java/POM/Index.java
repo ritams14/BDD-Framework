@@ -39,11 +39,12 @@ public class Index {
 		List<WebElement> allElements = driver.findElements(searchBox);
 		  
 		for (WebElement element : allElements) 
-		  { 			  			  
-			  if(element.getText().trim().contains("Mumbai"))
+		  { 			  	
+			  driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);
+			  System.out.println("Search Issue");
+			  if(element.getText().trim().contains("CCU"))
 			  { 
-				  wait.until(ExpectedConditions.elementToBeClickable(element));
-				  driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);				  
+				  wait.until(ExpectedConditions.elementToBeClickable(element));				  
 				  JavascriptExecutor jse = (JavascriptExecutor) driver;
 				  jse.executeScript("arguments[0].click()", driver.findElement(By.xpath("//*[@id=\"react-autowhatever-1-section-0-item-0\"]/div/div[1]/p[1]")));
 				  break;
