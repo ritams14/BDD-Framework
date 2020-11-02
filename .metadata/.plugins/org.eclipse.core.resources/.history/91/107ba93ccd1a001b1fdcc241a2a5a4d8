@@ -1,0 +1,11 @@
+Feature: Title of your feature
+
+  Scenario: Visiable massenger icon
+    Given user on facebook page
+    When successfully login
+    Then verify messenger
+
+  Scenario: Visiable notification icon
+    Given user on facebook page
+    When successfully login
+    Then verify notification

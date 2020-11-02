@@ -1,0 +1,23 @@
+io.cucumber.junit.UndefinedStepException: The step "user on facebook page" is undefined. You can implement it using the snippet(s) below:
+
+@Given("user on facebook page")
+public void user_on_facebook_page() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+
+Some other steps were also undefined:
+
+@When("successfully login")
+public void successfully_login() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("verify messenger")
+public void verify_messenger() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+

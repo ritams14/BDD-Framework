@@ -1,0 +1,11 @@
+Feature: verify facebook
+
+  Scenario: Visiable massenger icon
+    Given successfully login
+    When click on messanger icon
+    Then verify messenger
+
+  Scenario: Visiable notification icon
+    Given successfully login
+    When click on notification icon
+    Then verify notification

@@ -1,0 +1,11 @@
+
+Feature: Title of your feature
+
+  @smoke
+  Scenario: Sample 1
+    Given I want to write a step with precondition
+    When I complete action
+    And some other action
+    Then I validate the outcomes
+
+  

@@ -1,0 +1,50 @@
+package backGround;
+
+import io.cucumber.java.en.*;
+
+public class test {
+	@Given("user on login page")
+	public void user_on_login_page() {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new io.cucumber.java.PendingException();
+	}
+
+	@When("user gives the username and password")
+	public void user_gives_the_username_and_password() {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new io.cucumber.java.PendingException();
+	}
+
+	@Then("page redirect to home page")
+	public void page_redirect_to_home_page() {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new io.cucumber.java.PendingException();
+	}
+
+	@When("click on messanger icon")
+	public void click_on_messanger_icon() {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new io.cucumber.java.PendingException();
+	}
+
+	@Then("verify messenger")
+	public void verify_messenger() {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new io.cucumber.java.PendingException();
+	}
+
+	@When("click on notification icon")
+	public void click_on_notification_icon() {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new io.cucumber.java.PendingException();
+	}
+
+	@Then("verify notification")
+	public void verify_notification() {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new io.cucumber.java.PendingException();
+	}
+
+	
+
+}

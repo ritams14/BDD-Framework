@@ -1,0 +1,40 @@
+package stepDefination;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+import io.cucumber.java.en.*;
+
+public class LoginStep_PF {
+
+	String Property = System.getProperty("user.dir");
+	WebDriver driver;	
+	@Given("user on facebook page")
+	public void user_on_facebook_page() {
+	   System.out.println(Property);
+	   System.setProperty("webdriver.chrome.driver", Property+"\\src\\test\\resources\\Property\\chromedriver.exe");
+	   driver = new ChromeDriver();
+	   driver.get("https://upload.facebook.com/");
+	   driver.manage().window().maximize();
+	}
+
+	@When("^user gives the valid (.*) and (.*)$")
+	public void user_gives_the_valid_username1_and_password1(String username, String password) {
+	    driver.findElement(By.name("email")).sendKeys(username);
+	    driver.findElement(By.name("pass")).sendKeys(password);
+	}
+
+	@And("user click on submit button")
+	public void user_click_on_submit_button() {
+		driver.findElement(By.name("login")).click();
+	}
+
+	@Then("login is successfull")
+	public void login_is_successfull() {
+	   System.out.println("Test Passed");
+	}
+
+	
+	
+}

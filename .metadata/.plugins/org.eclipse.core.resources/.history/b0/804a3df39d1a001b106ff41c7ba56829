@@ -1,0 +1,31 @@
+
+Feature: Title of your feature
+
+  @smoke
+  Scenario: Sample 1
+    Given 
+    When 
+    And 
+    Then 
+
+  @regression
+  Scenario Outline: Sample 2
+    Given 
+    When 
+    Then 
+
+  
+
+  @regression @smoke
+  Scenario: Sample3
+    Given 
+    When 
+    And 
+    Then 
+
+  @tag1
+  Scenario: Sample 4
+    Given
+    When 
+    And 
+    Then 

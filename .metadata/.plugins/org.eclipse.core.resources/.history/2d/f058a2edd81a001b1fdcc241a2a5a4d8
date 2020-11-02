@@ -1,0 +1,15 @@
+Feature: verify facebook
+
+	Background: successfully login
+		Given user on login page
+    When user gives the username and password
+    And user click on submit button
+    Then page redirect to home page
+
+  Scenario: Visiable massenger icon
+    When click on messanger icon
+    Then verify messenger
+
+  Scenario: Visiable notification icon
+    When click on notification icon
+    Then verify notification
